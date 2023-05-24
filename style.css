@@ -1,0 +1,139 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #3a86ff;
+}
+
+.container {
+  position: fixed;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+}
+
+.upper-row {
+  flex-wrap: wrap;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 5px 5px;
+}
+
+.col2 {
+  position: relative;
+  flex-basis: 30%;
+}
+
+.outer-div {
+  position: absolute;
+  text-align: center;
+  background-color: #a8dadc;
+  left: 50%;
+  top: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+span {
+  display: inline-block;
+}
+
+.inner-div {
+  position: relative;
+  background-color: #22223b;
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 104px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.inner-div span {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+}
+
+.col1 {
+  padding: 10px;
+  flex-basis: 64%;
+}
+
+.timer {
+  position: fixed;
+  left: 10px;
+  top: 17px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.multiple-choices {
+  justify-content: space-around;
+}
+
+.choices {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #3a86ff;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.answer {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.bottom-row {
+  display: flex;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 1px solid rgb(83, 81, 81);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 65px;
+}
+
+.next-button {
+  width: 100px;
+  height: 35px;
+  margin-left: 150px;
+  color: white;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #0077b6;
+  border: none;
+}
+
+.dynamic {
+  margin-top: 10px;
+  margin-left: 20px;
+  flex-basis: 50%;
+}
+
+span {
+  font-weight: bold;
+}
