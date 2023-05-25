@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  let questions = [1, 2, 3, 4, 5, 6, 7]
+  const questions = [1, 2, 3, 4, 5, 6, 7]
   let currentQ = 1
   const nextQ = $('#nextQ')
   let intervalId = 1
@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
   }
 
-  function netxQuestion() {
+  function nextQuestion() {
     timer(15)
     if (currentQ < questions.length) {
       currentQ++
@@ -35,14 +35,14 @@ $(document).ready(function () {
   }
 
   $(nextQ).click(function (e) {
-    var buttonText = e.target.textContent || e.target.innerText
+    const buttonText = e.target.textContent || e.target.innerText
     if (buttonText === 'Restart') {
       currentQ = 0
-      netxQuestion()
+      nextQuestion()
       $(cQuestion).text(currentQ)
       $(nextQ).text('Next Question')
     } else {
-      netxQuestion()
+      nextQuestion()
     }
   })
 
