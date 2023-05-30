@@ -101,7 +101,7 @@ function nextQuestion() {
     if (userInput.toUpperCase() === 'A') {
       location.reload()
     } else {
-      window.location.href = './score.html'
+      window.location.href = './index.html'
     }
   }
 
